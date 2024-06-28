@@ -20,7 +20,7 @@ class _EmailsHomeState extends State<EmailsHome> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 8),
             child: Row(
               //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -28,6 +28,14 @@ class _EmailsHomeState extends State<EmailsHome> {
                   onPressed: () {},
                   icon: const Icon(
                     Icons.select_all,
+                    size: 22,
+                    color: Color(0xffbbbbbb),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.arrow_drop_down,
                     size: 22,
                     color: Color(0xffbbbbbb),
                   ),
@@ -87,12 +95,23 @@ class _EmailsHomeState extends State<EmailsHome> {
                     color: Color(0xffbbbbbb),
                   ),
                 ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.arrow_drop_down,
+                    size: 22,
+                    color: Color(0xffbbbbbb),
+                  ),
+                ),
+                const SizedBox(width: 10)
               ],
             ),
           ),
-          /*ListView(children: const [
-      
-          ],)*/
+          ListView(children: const [
+            Row(children: [
+              
+            ],)
+          ],)
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:desktop_gmail/pages/widgets/emails_home.dart';
+import 'package:desktop_gmail/pages/widgets/side_apps.dart';
 import 'package:desktop_gmail/pages/widgets/side_nav.dart';
 import 'package:flutter/material.dart';
 
@@ -119,7 +120,8 @@ class Home extends StatelessWidget {
       body: const Row(
         children: [
           SideNav(),
-          EmailsHome()
+          EmailsHome(),
+          SideApps()
         ],
       ),
     );
